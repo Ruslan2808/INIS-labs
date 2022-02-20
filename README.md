@@ -1,1 +1,1 @@
-# INIS-labs
+# https://ruslan-koncevic-inis-labs.netlify.app
