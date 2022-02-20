@@ -1,0 +1,248 @@
+/* index.html */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Catamaran';
+}
+
+h1, h2, h3 {
+    color: #1c3565;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.head {
+    height: 150px;
+    background-color: #0d193f;
+}
+
+.title {
+    position: relative;
+    top: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+    background-color: white;
+}
+
+.title img {
+    width: 176px;
+    height: 71px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.head_navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #7490b8;
+    padding: 10px 0px;
+}
+
+.head_navigation a {
+    color: #1e335b;
+}
+
+.home_img {
+    width: 100%;
+}
+
+.main_info {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.info_cards {
+    max-width: 400px;
+    border-radius: 15px;
+    border: 5px solid #0d193f;
+    margin: 0px 30px;
+    padding: 20px 40px;
+}
+
+.info_cards p {
+    color: #bfb9b7;
+}
+
+.footer_navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #0d193f;
+    padding: 10px 0px;
+}
+
+.footer_navigation a {
+    color: white;
+}
+
+/* products.html */
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_shirts {
+    width: 70%;
+    padding: 20px 0px;
+}
+
+.shirts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.t-shirt {
+    width: 30%;
+    border-radius: 20px;
+    border: 5px solid #0d193f;
+    margin: 0px 17px 20px 0px;
+}
+
+.t-shirt img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.t-shirt_info {
+    padding: 10px 20px;
+}
+
+.t-shirt_buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.btn_quick_view, .btn_see_page {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.quick_view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7490b8;
+    padding: 10px 0px;
+}
+
+.quick_view_info {
+    display: flex;
+    width: 70%;
+}
+
+.quick_view_images {
+    width: 30%;
+}
+
+.quick_view_images img {
+    width: 50%;
+}
+
+.quick_view_info_t-shirt {
+    position: relative;
+    padding-left: 20px;
+}
+
+.quick_view_info_t-shirt button {
+    position: absolute;
+    bottom: 10%;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #0d193f;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #7490b8;
+}
+
+/*details.html*/
+
+.content_t-shirt {
+    width: 70%;
+    padding: 40px 0px;
+}
+
+.shirt {
+    display: flex;
+    padding-top: 20px;
+}
+
+.shirt img {
+    width: 30%;
+    margin-right: 40px;
+}
+
+.buttons_t-shirt {
+    margin-top: 40px;
+}
+
+.buttons_t-shirt button {
+    width: 60px;
+    height: 30px;
+    margin-left: 10px;
+    border: solid #0d193f;
+    text-transform: capitalize;
+}
+
+.side_buttons {
+    display: flex;
+    align-items: center;
+}
+
+.color_buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.color_buttons button {
+    background-color: var(--backgroundColor);
+    color: #0d193f;
+}
+
+.color_buttons button:hover {
+    border-color: #7490b8;
+}
+
+/*not_implemented_img*/
+.not_implemented_img {
+    display: flex;
+    margin: 0 auto;
+}
