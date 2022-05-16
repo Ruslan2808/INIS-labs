@@ -19,7 +19,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.head {
+.header-container {
     height: 150px;
     background-color: #0d193f;
 }
@@ -40,11 +40,15 @@ a:hover {
     height: 71px;
 }
 
+.title img:hover {
+    cursor: pointer;
+}
+
 h1 {
     font-size: 48px;
 }
 
-.head_navigation {
+.nav-menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -53,47 +57,43 @@ h1 {
     padding: 10px 0px;
 }
 
-.head_navigation a {
+.nav-menu a {
     color: #1e335b;
 }
 
-.home_img {
+.home-img {
     width: 100%;
 }
 
-.main_info {
+.main-info {
     display: flex;
     justify-content: center;
 }
 
 .info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 30px 0px;
 }
 
-.info_cards {
+.info-cards {
     max-width: 400px;
     border-radius: 15px;
     border: 5px solid #0d193f;
-    margin: 0px 30px;
+    margin: 10px 30px;
     padding: 20px 40px;
 }
 
-.info_cards p {
+.info-cards p {
     color: #bfb9b7;
 }
 
-.footer_navigation {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+.footer .nav-menu {
     background-color: #0d193f;
-    padding: 10px 0px;
 }
 
-.footer_navigation a {
+.footer .nav-menu a {
     color: white;
 }
 
@@ -140,13 +140,13 @@ h1 {
     padding: 10px 0px;
 }
 
-.btn_quick_view, .btn_see_page {
+.btn_quick-view, .btn_see-page {
     width: 100px;
     height: 40px;
     font-size: 15px;
 }
 
-.quick_view {
+.quick-view {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,25 +154,25 @@ h1 {
     padding: 10px 0px;
 }
 
-.quick_view_info {
+.quick-view_info {
     display: flex;
     width: 70%;
 }
 
-.quick_view_images {
+.quick-view_images {
     width: 30%;
 }
 
-.quick_view_images img {
+.quick-view_images img {
     width: 50%;
 }
 
-.quick_view_info_t-shirt {
+.quick-view-info_t-shirt {
     position: relative;
     padding-left: 20px;
 }
 
-.quick_view_info_t-shirt button {
+.quick-view-info_t-shirt button {
     position: absolute;
     bottom: 10%;
     width: 60px;
@@ -242,7 +242,52 @@ button:hover {
 }
 
 /*not_implemented_img*/
+
 .not_implemented_img {
     display: flex;
     margin: 0 auto;
+}
+
+/*adaptive main page*/
+
+@media (max-width: 1024px) {
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .title img {
+        width: 132px;
+        height: 51px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .title img {
+        width: 88px;
+        height: 35px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 21px;
+    }
+
+    .title {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
 }

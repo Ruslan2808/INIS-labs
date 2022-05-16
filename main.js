@@ -43,18 +43,18 @@ function createTShirt(shirt) {
     tShirtInfo.append(tShirtButtons);
 
     const buttonQuickView = document.createElement("button");
-    buttonQuickView.className = "btn_quick_view";
+    buttonQuickView.className = "btn_quick-view";
     buttonQuickView.textContent = "Quick View";
     tShirtButtons.append(buttonQuickView);
 
     let buttonSeePage = document.createElement("button");
-    buttonSeePage.className = "btn_see_page";
+    buttonSeePage.className = "btn_see-page";
     buttonSeePage.textContent = "See Page";
     tShirtButtons.append(buttonSeePage);
 
     windowQuickView(buttonQuickView, tShirt, shirt);
 
-    const btnSeePage = tShirt.querySelector(".btn_see_page");
+    const btnSeePage = tShirt.querySelector(".btn_see-page");
     btnSeePage.addEventListener("click", () => {
         localStorage.setItem("indexTShirt", shirts.indexOf(shirt));
         document.location = "details.html";
@@ -67,16 +67,16 @@ function windowQuickView(buttonQuickView, tShirt, shirt) {
     const main = document.querySelector("main");
     
     buttonQuickView.addEventListener("click", () => {
-        const qView = document.querySelector(".quick_view");
+        const qView = document.querySelector(".quick-view");
         if (qView) qView.remove();
 
-        const quickView = createElement("div", "quick_view")
+        const quickView = createElement("div", "quick-view")
         main.append(quickView);
 
-        const quickViewInfo = createElement("div", "quick_view_info");
+        const quickViewInfo = createElement("div", "quick-view_info");
         quickView.append(quickViewInfo);
 
-        const quickViewImages = createElement("div", "quick_view_images");
+        const quickViewImages = createElement("div", "quick-view_images");
         quickViewInfo.append(quickViewImages);
 
         const imageTShirt = shirt.colors[Object.keys(shirt.colors)[0]];
@@ -89,7 +89,7 @@ function windowQuickView(buttonQuickView, tShirt, shirt) {
         imageTShirtBack.src = imageTShirt.back;
         quickViewImages.append(imageTShirtBack);
 
-        const quickViewInfoTShirt = createElement("div", "quick_view_info_t-shirt");
+        const quickViewInfoTShirt = createElement("div", "quick-view-info_t-shirt");
         quickViewInfo.append(quickViewInfoTShirt);
 
         const headerTShirt = createInfoElement("h3", tShirt.querySelector("h3").textContent);
